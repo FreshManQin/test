@@ -1,0 +1,29 @@
+//生成验证码
+String yzm = String
+				.valueOf(Math.round(Math.random() * 8999 + 1000));
+最简单的一个单例公共类：
+public class PhoneCodeMap implements Serializable{
+	
+	private static final long serialVersionUID = -6341584999536185129L;
+
+	private Map<String, Object[]> phoneCodeMap=new ConcurrentHashMap<String, Object[]>();
+
+  //new instance
+	private static PhoneCodeMap instance = new PhoneCodeMap();
+
+  //构造方法
+	private PhoneCodeMap() {
+	}
+
+  //get instance
+	public static PhoneCodeMap getInstance() {
+		return instance;
+	}
+  //得到这个公共类里面单例的map
+	public Map<String, Object[]> getPhoneCodeMap() {
+		return phoneCodeMap;
+	}
+	
+	
+
+}
