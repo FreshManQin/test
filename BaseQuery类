@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * BaseQuery
- * @author LeeSon  QQ:25901875
+ *
  *
  */
 public class BaseQuery implements Serializable{
