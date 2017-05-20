@@ -1,0 +1,48 @@
+package com.leeson.common.utils;
+/**
+ * 字符串工具类
+ *
+ */
+public class stringUtils {
+
+	/**
+	 * 判断某字符串是否为空，为空的标准是 str==null 或 str.length()==0
+	 * @param str
+	 * @return
+	 */
+	public static boolean isEmpty(String str) {
+		if(null==str||0==str.length()){
+    		return true;
+    	}else {
+    		return false;
+		}
+	}
+    public static boolean isNotEmpty(String str) {
+    	if(null==str||0==str.length()){
+    		return false;
+    	}else {
+    		return true;
+		}
+	}
+    
+    /**
+     * 判断某字符串是否为空或长度为0或由空白符(whitespace) 构成 
+     * @param str
+     * @return
+     */
+    public static boolean isBlank(String str) {
+    	if(null==str||0==str.length()||"".equals(str.trim())||"null".equals(str)||"null".equals(str.trim())){
+    		return true;
+    	}else {
+    		return false;
+		}
+     }
+    public static boolean isNotBlank(String str) {
+    	if(null==str||0==str.length()||"".equals(str.trim())||"null".equals(str)||"null".equals(str.trim())){
+    		return false;
+    	}else {
+    		return true;
+		}
+    }
+
+}
