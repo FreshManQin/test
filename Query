@@ -1,0 +1,717 @@
+package com.leeson.core.query;
+
+import java.util.*;
+import com.leeson.common.base.BaseQuery;
+/**
+ * 订单详情对象
+ * @author LeeSon
+ */
+public class PortalaccountQuery extends BaseQuery {
+	/**
+	 * ==============================批量查询、更新、删除时的Where条件设置======================
+	 * ============
+	 **/
+	private Long id;
+	public Long getId() {
+		return id;
+	}
+	public PortalaccountQuery setId(Long id) {
+		this.id = id;
+		return this;
+	}
+	private String loginName;
+	public String getLoginName() {
+		return loginName;
+	}
+	public PortalaccountQuery setLoginName(String loginName) {
+		this.loginName = loginName;
+		return this;
+	}
+	private boolean loginNameLike;
+	public PortalaccountQuery setLoginNameLike(boolean isLike) {
+		this.loginNameLike = isLike;
+		return this;
+	}
+	private String password;
+	public String getPassword() {
+		return password;
+	}
+	public PortalaccountQuery setPassword(String password) {
+		this.password = password;
+		return this;
+	}
+	private boolean passwordLike;
+	public PortalaccountQuery setPasswordLike(boolean isLike) {
+		this.passwordLike = isLike;
+		return this;
+	}
+	private String name;
+	public String getName() {
+		return name;
+	}
+	public PortalaccountQuery setName(String name) {
+		this.name = name;
+		return this;
+	}
+	private boolean nameLike;
+	public PortalaccountQuery setNameLike(boolean isLike) {
+		this.nameLike = isLike;
+		return this;
+	}
+	private String gender;
+	public String getGender() {
+		return gender;
+	}
+	public PortalaccountQuery setGender(String gender) {
+		this.gender = gender;
+		return this;
+	}
+	private boolean genderLike;
+	public PortalaccountQuery setGenderLike(boolean isLike) {
+		this.genderLike = isLike;
+		return this;
+	}
+	private String phoneNumber;
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+	public PortalaccountQuery setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+		return this;
+	}
+	private boolean phoneNumberLike;
+	public PortalaccountQuery setPhoneNumberLike(boolean isLike) {
+		this.phoneNumberLike = isLike;
+		return this;
+	}
+	private String email;
+	public String getEmail() {
+		return email;
+	}
+	public PortalaccountQuery setEmail(String email) {
+		this.email = email;
+		return this;
+	}
+	private boolean emailLike;
+	public PortalaccountQuery setEmailLike(boolean isLike) {
+		this.emailLike = isLike;
+		return this;
+	}
+	private String description;
+	public String getDescription() {
+		return description;
+	}
+	public PortalaccountQuery setDescription(String description) {
+		this.description = description;
+		return this;
+	}
+	private boolean descriptionLike;
+	public PortalaccountQuery setDescriptionLike(boolean isLike) {
+		this.descriptionLike = isLike;
+		return this;
+	}
+	private Date date;
+	public Date getDate() {
+		return date;
+	}
+	public PortalaccountQuery setDate(Date date) {
+		this.date = date;
+		return this;
+	}
+	private Long time;
+	public Long getTime() {
+		return time;
+	}
+	public PortalaccountQuery setTime(Long time) {
+		this.time = time;
+		return this;
+	}
+	private Long octets;
+	public Long getOctets() {
+		return octets;
+	}
+	public PortalaccountQuery setOctets(Long octets) {
+		this.octets = octets;
+		return this;
+	}
+	private String state;
+	public String getState() {
+		return state;
+	}
+	public PortalaccountQuery setState(String state) {
+		this.state = state;
+		return this;
+	}
+	private boolean stateLike;
+	public PortalaccountQuery setStateLike(boolean isLike) {
+		this.stateLike = isLike;
+		return this;
+	}
+	private String idnumber;
+	public String getIdnumber() {
+		return idnumber;
+	}
+	public PortalaccountQuery setIdnumber(String idnumber) {
+		this.idnumber = idnumber;
+		return this;
+	}
+	private boolean idnumberLike;
+	public PortalaccountQuery setIdnumberLike(boolean isLike) {
+		this.idnumberLike = isLike;
+		return this;
+	}
+	private String address;
+	public String getAddress() {
+		return address;
+	}
+	public PortalaccountQuery setAddress(String address) {
+		this.address = address;
+		return this;
+	}
+	private boolean addressLike;
+	public PortalaccountQuery setAddressLike(boolean isLike) {
+		this.addressLike = isLike;
+		return this;
+	}
+	private Long speed;
+	public Long getSpeed() {
+		return speed;
+	}
+	public PortalaccountQuery setSpeed(Long speed) {
+		this.speed = speed;
+		return this;
+	}
+	private Integer maclimit;
+	public Integer getMaclimit() {
+		return maclimit;
+	}
+	public PortalaccountQuery setMaclimit(Integer maclimit) {
+		this.maclimit = maclimit;
+		return this;
+	}
+	private Integer maclimitcount;
+	public Integer getMaclimitcount() {
+		return maclimitcount;
+	}
+	public PortalaccountQuery setMaclimitcount(Integer maclimitcount) {
+		this.maclimitcount = maclimitcount;
+		return this;
+	}
+	private Integer autologin;
+	public Integer getAutologin() {
+		return autologin;
+	}
+	public PortalaccountQuery setAutologin(Integer autologin) {
+		this.autologin = autologin;
+		return this;
+	}
+	private String ex1;
+	public String getEx1() {
+		return ex1;
+	}
+	public PortalaccountQuery setEx1(String ex1) {
+		this.ex1 = ex1;
+		return this;
+	}
+	private boolean ex1Like;
+	public PortalaccountQuery setEx1Like(boolean isLike) {
+		this.ex1Like = isLike;
+		return this;
+	}
+	private String ex2;
+	public String getEx2() {
+		return ex2;
+	}
+	public PortalaccountQuery setEx2(String ex2) {
+		this.ex2 = ex2;
+		return this;
+	}
+	private boolean ex2Like;
+	public PortalaccountQuery setEx2Like(boolean isLike) {
+		this.ex2Like = isLike;
+		return this;
+	}
+	private String ex3;
+	public String getEx3() {
+		return ex3;
+	}
+	public PortalaccountQuery setEx3(String ex3) {
+		this.ex3 = ex3;
+		return this;
+	}
+	private boolean ex3Like;
+	public PortalaccountQuery setEx3Like(boolean isLike) {
+		this.ex3Like = isLike;
+		return this;
+	}
+	private String ex4;
+	public String getEx4() {
+		return ex4;
+	}
+	public PortalaccountQuery setEx4(String ex4) {
+		this.ex4 = ex4;
+		return this;
+	}
+	private boolean ex4Like;
+	public PortalaccountQuery setEx4Like(boolean isLike) {
+		this.ex4Like = isLike;
+		return this;
+	}
+	private String ex5;
+	public String getEx5() {
+		return ex5;
+	}
+	public PortalaccountQuery setEx5(String ex5) {
+		this.ex5 = ex5;
+		return this;
+	}
+	private boolean ex5Like;
+	public PortalaccountQuery setEx5Like(boolean isLike) {
+		this.ex5Like = isLike;
+		return this;
+	}
+	private String ex6;
+	public String getEx6() {
+		return ex6;
+	}
+	public PortalaccountQuery setEx6(String ex6) {
+		this.ex6 = ex6;
+		return this;
+	}
+	private boolean ex6Like;
+	public PortalaccountQuery setEx6Like(boolean isLike) {
+		this.ex6Like = isLike;
+		return this;
+	}
+	private String ex7;
+	public String getEx7() {
+		return ex7;
+	}
+	public PortalaccountQuery setEx7(String ex7) {
+		this.ex7 = ex7;
+		return this;
+	}
+	private boolean ex7Like;
+	public PortalaccountQuery setEx7Like(boolean isLike) {
+		this.ex7Like = isLike;
+		return this;
+	}
+	private String ex8;
+	public String getEx8() {
+		return ex8;
+	}
+	public PortalaccountQuery setEx8(String ex8) {
+		this.ex8 = ex8;
+		return this;
+	}
+	private boolean ex8Like;
+	public PortalaccountQuery setEx8Like(boolean isLike) {
+		this.ex8Like = isLike;
+		return this;
+	}
+	private String ex9;
+	public String getEx9() {
+		return ex9;
+	}
+	public PortalaccountQuery setEx9(String ex9) {
+		this.ex9 = ex9;
+		return this;
+	}
+	private boolean ex9Like;
+	public PortalaccountQuery setEx9Like(boolean isLike) {
+		this.ex9Like = isLike;
+		return this;
+	}
+	private String ex10;
+	public String getEx10() {
+		return ex10;
+	}
+	public PortalaccountQuery setEx10(String ex10) {
+		this.ex10 = ex10;
+		return this;
+	}
+	private boolean ex10Like;
+	public PortalaccountQuery setEx10Like(boolean isLike) {
+		this.ex10Like = isLike;
+		return this;
+	}
+	/**
+	 * ==============================批量查询时的Order条件顺序设置==========================
+	 * ========
+	 **/
+	 	public class OrderField {
+		public OrderField(String fieldName, String order) {
+			super();
+			this.fieldName = fieldName;
+			this.order = order;
+		}
+		private String fieldName;
+		private String order;
+
+		public String getFieldName() {
+			return fieldName;
+		}
+		public OrderField setFieldName(String fieldName) {
+			this.fieldName = fieldName;
+			return this;
+		}
+		public String getOrder() {
+			return order;
+		}
+		public OrderField setOrder(String order) {
+			this.order = order;
+			return this;
+		}
+	}
+		/**
+	 * ==============================批量查询时的Order条件顺序设置==========================
+	 * ========
+	 **/
+	/** 排序列表字段 **/
+	private List<OrderField> orderFields = new ArrayList<OrderField>();
+	/**
+	 * 设置排序按属性：id
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyId(boolean isAsc) {
+		orderFields.add(new OrderField("id", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：loginName
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyLoginName(boolean isAsc) {
+		orderFields.add(new OrderField("loginName", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：password
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyPassword(boolean isAsc) {
+		orderFields.add(new OrderField("password", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：name
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyName(boolean isAsc) {
+		orderFields.add(new OrderField("name", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：gender
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyGender(boolean isAsc) {
+		orderFields.add(new OrderField("gender", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：phoneNumber
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyPhoneNumber(boolean isAsc) {
+		orderFields.add(new OrderField("phoneNumber", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：email
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyEmail(boolean isAsc) {
+		orderFields.add(new OrderField("email", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：description
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyDescription(boolean isAsc) {
+		orderFields.add(new OrderField("description", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：date
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyDate(boolean isAsc) {
+		orderFields.add(new OrderField("date", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：time
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyTime(boolean isAsc) {
+		orderFields.add(new OrderField("time", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：octets
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyOctets(boolean isAsc) {
+		orderFields.add(new OrderField("octets", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：state
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyState(boolean isAsc) {
+		orderFields.add(new OrderField("state", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：idnumber
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyIdnumber(boolean isAsc) {
+		orderFields.add(new OrderField("idnumber", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：address
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyAddress(boolean isAsc) {
+		orderFields.add(new OrderField("address", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：speed
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbySpeed(boolean isAsc) {
+		orderFields.add(new OrderField("speed", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：maclimit
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyMaclimit(boolean isAsc) {
+		orderFields.add(new OrderField("maclimit", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：maclimitcount
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyMaclimitcount(boolean isAsc) {
+		orderFields.add(new OrderField("maclimitcount", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：autologin
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyAutologin(boolean isAsc) {
+		orderFields.add(new OrderField("autologin", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：ex1
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyEx1(boolean isAsc) {
+		orderFields.add(new OrderField("ex1", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：ex2
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyEx2(boolean isAsc) {
+		orderFields.add(new OrderField("ex2", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：ex3
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyEx3(boolean isAsc) {
+		orderFields.add(new OrderField("ex3", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：ex4
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyEx4(boolean isAsc) {
+		orderFields.add(new OrderField("ex4", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：ex5
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyEx5(boolean isAsc) {
+		orderFields.add(new OrderField("ex5", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：ex6
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyEx6(boolean isAsc) {
+		orderFields.add(new OrderField("ex6", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：ex7
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyEx7(boolean isAsc) {
+		orderFields.add(new OrderField("ex7", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：ex8
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyEx8(boolean isAsc) {
+		orderFields.add(new OrderField("ex8", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：ex9
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyEx9(boolean isAsc) {
+		orderFields.add(new OrderField("ex9", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	/**
+	 * 设置排序按属性：ex10
+	 * 
+	 * @param isAsc
+	 *            是否升序，否则为降序
+	 */
+	public PortalaccountQuery orderbyEx10(boolean isAsc) {
+		orderFields.add(new OrderField("ex10", isAsc ? "ASC" : "DESC"));
+		return this;
+	}
+	private String fields;
+	/**
+	 * 提供自定义字段使用
+	 */
+	private static Map<String, String> fieldMap;
+
+	private static Map<String, String> getFieldSet() {
+		if (fieldMap == null) {
+			fieldMap = new HashMap<String, String>();
+			fieldMap.put("id", "id");
+			fieldMap.put("loginName", "loginName");
+			fieldMap.put("password", "password");
+			fieldMap.put("name", "name");
+			fieldMap.put("gender", "gender");
+			fieldMap.put("phoneNumber", "phoneNumber");
+			fieldMap.put("email", "email");
+			fieldMap.put("description", "description");
+			fieldMap.put("date", "date");
+			fieldMap.put("time", "time");
+			fieldMap.put("octets", "octets");
+			fieldMap.put("state", "state");
+			fieldMap.put("idnumber", "idnumber");
+			fieldMap.put("address", "address");
+			fieldMap.put("speed", "speed");
+			fieldMap.put("maclimit", "maclimit");
+			fieldMap.put("maclimitcount", "maclimitcount");
+			fieldMap.put("autologin", "autologin");
+			fieldMap.put("ex1", "ex1");
+			fieldMap.put("ex2", "ex2");
+			fieldMap.put("ex3", "ex3");
+			fieldMap.put("ex4", "ex4");
+			fieldMap.put("ex5", "ex5");
+			fieldMap.put("ex6", "ex6");
+			fieldMap.put("ex7", "ex7");
+			fieldMap.put("ex8", "ex8");
+			fieldMap.put("ex9", "ex9");
+			fieldMap.put("ex10", "ex10");
+		}
+		return fieldMap;
+	}
+
+	public String getFields() {
+		return this.fields;
+	}
+	public void setFields(String fields) {
+		if (fields == null)
+			return;
+		String[] array = fields.split(",");
+		StringBuffer buffer = new StringBuffer();
+		for (String field : array) {
+			if (getFieldSet().containsKey(field)) {
+				buffer.append(getFieldSet().get(field)).append(" as ")
+						.append(field).append(" ,");
+			}
+			if (getFieldSet().containsKey("`" + field + "`")) {
+				buffer.append("`" + getFieldSet().get(field) + "`").append(" as ")
+						.append(field).append(" ,");
+			}
+		}
+		if (buffer.length() != 0) {
+			this.fields = buffer.substring(0, buffer.length() - 1);
+		} else {
+			this.fields = " 1 ";// 没有一个参数可能会报错
+		}
+	}
+}
