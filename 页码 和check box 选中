@@ -1,0 +1,40 @@
+        <th><input name="chooseAll" type="checkbox" onClick="$('[name=ids]').attr('checked', this.checked)"/></th>
+        
+        
+        
+        
+           <div class="pagin">
+    	<div class="message"><spring:message code="共"></spring:message>&nbsp;<i class="blue">${pagination.totalCount }</i>&nbsp;<spring:message code="条记录"></spring:message>，<spring:message code="当前显示第"></spring:message>&nbsp;<i class="blue">${pagination.pageNo }</i>&nbsp;<spring:message code="页"></spring:message>,<spring:message code="共"></spring:message>&nbsp;<i class="blue">${pagination.totalPage }</i>&nbsp;<spring:message code="页"></spring:message>,<spring:message code="每页显示"></spring:message>&nbsp;<i class="blue">${pagination.pageSize }</i>&nbsp;<spring:message code="条记录"></spring:message></div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript: gotoPage(1)" title="<spring:message code="首页"></spring:message>"><spring:message code="首"></spring:message></a></li>
+        <li class="paginItem"><a href="javascript: gotoPage(
+        <c:if test="${pagination.pageNo == 1}">
+				${pagination.pageNo}
+			</c:if>
+			<c:if test="${pagination.pageNo != 1}">
+				${pagination.pageNo}-1
+			</c:if>
+        )"><span class="pagepre"></span></a></li>
+        
+        <c:forEach var="num" begin="${pagination.beginPageIndex }" end="${pagination.endPageIndex }">
+
+        
+			<c:if test="${num == pagination.pageNo}"><%-- 当前页 --%>
+				 <li class="paginItem current"><a href="#">${num}</a></li>
+			</c:if>
+			<c:if test="${num != pagination.pageNo}"><%-- 非当前页 --%>
+				<li class="paginItem"><a href="javascript: gotoPage(${num})">${num}</a></li>
+			</c:if>
+		</c:forEach>
+		
+		<li class="paginItem"><a href="javascript: gotoPage(
+		<c:if test="${pagination.totalPage == pagination.pageNo}">
+				${pagination.pageNo}
+			</c:if>
+			<c:if test="${pagination.totalPage != pagination.pageNo}">
+				${pagination.pageNo}+1
+			</c:if>
+        )"><span class="pagenxt"></span></a></li>
+        <li class="paginItem"><a href="javascript: gotoPage(${pagination.totalPage})" title="<spring:message code="最后一页"></spring:message>"><spring:message code="尾"></spring:message></a></li>
+        </ul>
+    </div>

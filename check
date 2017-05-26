@@ -1,1 +1,0 @@
-        <th><input name="chooseAll" type="checkbox" onClick="$('[name=ids]').attr('checked', this.checked)"/></th>
